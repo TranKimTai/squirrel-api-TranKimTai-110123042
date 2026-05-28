@@ -23,5 +23,5 @@ jobs:
         
     - name: Run Tests with Maven
       run: |
-        cd JavaMaven-Trankimtai-110123042
+        cd JavaMaven-TranKimTai-110123042
         mvn clean test
