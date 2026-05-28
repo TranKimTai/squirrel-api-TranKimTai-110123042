@@ -7,19 +7,22 @@ public class AppTest {
 
     @Test
     public void testCoNghiem() {
-        // Trường hợp a != 0 (Ví dụ: 2x + 4 = 0) -> CN
+        System.out.println("=== DANG TEST PHUONG TRINH: 2x + 4 = 0 ===");
+        System.out.println("-> Ket qua may chay: " + App.giaiPhuongTrinhBac1(2, 4));
         assertEquals("CN", App.giaiPhuongTrinhBac1(2, 4));
     }
 
     @Test
     public void testVoSoNghiem() {
-        // Trường hợp a = 0, b = 0 (0x + 0 = 0) -> VSN
+        System.out.println("=== DANG TEST PHUONG TRINH: 0x + 0 = 0 ===");
+        System.out.println("-> Ket qua may chay: " + App.giaiPhuongTrinhBac1(0, 0));
         assertEquals("VSN", App.giaiPhuongTrinhBac1(0, 0));
     }
 
     @Test
     public void testVoNghiem() {
-        // Trường hợp a = 0, b != 0 (0x + 3 = 0) -> VN
+        System.out.println("=== DANG TEST PHUONG TRINH: 0x + 3 = 0 ===");
+        System.out.println("-> Ket qua may chay: " + App.giaiPhuongTrinhBac1(0, 3));
         assertEquals("VN", App.giaiPhuongTrinhBac1(0, 3));
     }
 }
